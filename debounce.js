@@ -6,7 +6,7 @@ function log(params){
 }
 
 const debounceLog = debounce(log,2000,{trailing:true,leading:true});
-const throttleLog = throttle(log,1000,{leading:true,trailing:true});
+const throttleLog = throttle(log,1000,{leading:false,trailing:true});
 
 let i=0;
 let throttleI=0;
