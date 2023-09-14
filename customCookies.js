@@ -2,6 +2,7 @@ function initCustomCookies(){
     const cookies=[];
 
     Object.defineProperty(document,'myCustomCookie',{
+        
         set(val){
             const timestamp = Date.now();
             const [nameString,...optionStrings] = val.split(";");
